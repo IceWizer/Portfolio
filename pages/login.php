@@ -2,6 +2,7 @@
 // Path: pages\login.php
 // Is the user already logged in?
 
+global $token;
 if (isset($_SESSION['user']) && $_SESSION['user'] == $token) {
     // Redirect to home page
     echo "<script>alert('test'); window.location.replace(\"index.php?page=home\");</script>";
