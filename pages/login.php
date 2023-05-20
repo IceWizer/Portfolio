@@ -5,7 +5,7 @@
 global $token;
 if (isset($_SESSION['user']) && $_SESSION['user'] == $token) {
     // Redirect to home page
-    echo "<script>alert('test'); window.location.replace(\"index.php?page=home\");</script>";
+    echo "<script>window.location.replace(\"index.php?page=home\");</script>";
     exit;
 }
 
@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
         // Success! Set up the session
         $_SESSION['user'] = $token;
         // Redirect to home page
-        header('Location: index.php?page=home');
+        echo "<script>window.location.replace(\"index.php?page=home\");</script>";
         exit;
     } else {
         // Invalid name or password
@@ -39,9 +39,9 @@ if (isset($_POST['login'])) {
                 <p>Merci de remplir les champs ci-dessous</p>
                 <hr>
                 <label for="name"><b>Nom</b></label>
-                <input class="form-control" type="text" placeholder="Nom" name="name" required>
+                <input class="form-control" type="text" placeholder="Nom" name="name" id="name" required>
                 <label for="password"><b>Mots de passe</b></label>
-                <input class="form-control" type="password" placeholder="Mot de passe" name="password" required>
+                <input class="form-control" type="password" placeholder="Mot de passe" name="password" id="password" required>
                 <hr>
                 <?php
                     if (isset($error)) {
