@@ -1,1 +1,1 @@
-docker run -dit -v ${PWD}:/var/www/html -p 80:80 --name Portfolio php:8.1.18-apache-bullseye
+docker run -dit -v ${PWD}:/var/www/html -p 80:80 -p 443:443 --name Portfolio php:8.1.18-apache-bullseye

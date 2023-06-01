@@ -36,9 +36,6 @@ if (isset($_SESSION['user']) && $_SESSION['user'] == $token) {
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="?page=competences">Compétences</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="?page=project">Projets</a>
-                        </li>
                     </ul>
                     <a href="index.php?page=logout" class="btn btn-outline-danger">Logout</a>
                 </div>
