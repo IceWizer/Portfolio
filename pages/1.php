@@ -5,3 +5,4 @@
 <p>Mégacasting a une API basée sur Symfony 6.3, qui avec API Platform, s'occupe de la sécurité de chaque route grâce aux annotations de PHP.</p>
 <p>Le site web de Mégacasting fonctionne avec VueJs, la sécurité est gérée par VueX, un package JavaScript avec lequel on peut gèrer les routes, et que faire avant les routes.</p>
 <p>De ce fait chaque service gère sa sécurité comme elle veut, elle ne peut pas outrepasser la sécurité d'un autre service.</p>
+<img width="640" src="data/1.png" alt="page1">

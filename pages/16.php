@@ -3,3 +3,4 @@
 
 <p>L'application web était déjà développer, cependant il y avait des bugs ou modifications remontés par le client.</p>
 <p>Afin de me permettre de m'habituer au cadre qui m'était et me sera imposé pendant mon stage.</p>
+<img width="1000" src="data/11.png" alt="page1">

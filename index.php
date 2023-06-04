@@ -11,8 +11,6 @@ if (isset($_SESSION['user']) && $_SESSION['user'] == $token) {
     $page = $_GET['page'] ?? 'competences';
 }
 
-// $_GET contains page
-
 ?>
 
 <!DOCTYPE html>
