@@ -5,7 +5,7 @@
 global $token;
 if (isset($_SESSION['user']) && $_SESSION['user'] == $token) {
     // Redirect to home page
-    echo "<script>window.location.replace(\"index.php?page=competence\");</script>";
+    echo "<script>window.location.replace(\"index.php?page=competences\");</script>";
     exit;
 }
 
@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
         // Success! Set up the session
         $_SESSION['user'] = $token;
         // Redirect to home page
-        echo "<script>window.location.replace(\"index.php?page=competence\");</script>";
+        echo "<script>window.location.replace(\"index.php?page=competences\");</script>";
         exit;
     } else {
         // Invalid name or password
